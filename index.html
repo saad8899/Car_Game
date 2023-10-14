@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="my-div">
+        <h3></h3>
+        <div class="img">
+            <img width="100%"
+                src="https://img.freepik.com/premium-vector/highway-hill-asphalt-road-city-road-outdoor-with-traffic-signs-design-flat-vector-illustration_582267-944.jpg?w=826"
+                alt="">
+            <div class="car">
+                <img width="100%"
+                    src="https://static.vecteezy.com/system/resources/previews/001/193/929/original/vintage-car-png.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let car=document.querySelector('.car')
+        let count=0;
+        window.addEventListener('keydown',(e)=>{
+            const {key}=e;
+            if(key ==='ArrowRight'){
+                count=count+15;
+                console.log(count)
+                    car.style.transform=`translateX(${count}px)`
+                
+            }
+            else if(key==='ArrowLeft'){
+                count=count-15;
+                    car.style.transform=`translateX(${count}px)`
+                
+            }
+        })
+    </script>
+</body>
+
+</html>

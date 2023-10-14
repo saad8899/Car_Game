@@ -1,0 +1,18 @@
+.my-div{
+    width: 100%;
+    /* background: red; */
+    position: relative;
+}
+.img{
+    position: relative;
+    width: 100%;
+    top: 150px;
+}
+
+.car{
+    position: absolute;
+    width: 20%;
+    top: 300px;
+    transition: all 0.3s;
+
+}
